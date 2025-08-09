@@ -93,6 +93,32 @@ int main() {
 
 ```
 
+# Các phép toán so sánh trong câu điều kiện
+
+```c
+
+// Phép so sánh lớn hơn
+if (a > b) {...}
+
+// Phép so sánh nhỏ hơn
+if (a < b) {...}
+
+// Phép so sánh lớn hơn hoặc bằng
+if (a >= b) {...}
+
+// Phép so sánh nhỏ hơn hoặc bằng
+if (a <= b) {...}
+
+// Phép so sánh bằng
+if ( a == b) {...}
+
+//Phép so khác
+if ( a != b) {..}
+
+
+```
+
+
 
 # Câu điều kiện trong C
 
