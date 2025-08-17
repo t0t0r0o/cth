@@ -40,7 +40,7 @@ int main() {
 
 # Khai báo biến, kiểu dữ liệu, toán tử
 
-
+Các phép toán; +, -, *, /, %
 
 ```c
 #include <stdio.h>
@@ -118,6 +118,38 @@ if ( a != b) {..}
 
 ```
 
+
+# Toán tử logic trong câu điều kiện
+
+- Toán tử và  &&: đúng khi tất cả mệnh đề đều đúng, sai trong các trường hợp còn lại
+
+    (10 < 20) && (20%10 == 0) => đúng
+
+    (10 < 20) && (20%10 !=0)  => Sai
+
+    (10 < 20) && (20%10 !=0) && (10 %2 == 0) =>  sai
+
+
+
+- Toán tử hoặc ||: Đúng khi 1 trong các mệnh đề đúng, sai khi tất cả các mệnh đề sai
+    (10 < 20) || (20%10 == 0) => Đúng
+
+    (10 < 20) || (20%10 !=0)  => Đúng
+
+    (10 < 20) || (20%10 !=0) || (10 %2 == 0) => Đúng
+
+    (10 > 20) || (20%10 !=0) => Sai
+
+    
+
+- Toán tử NOT !: Phủ định của mệnh đề hiện tại
+
+    !(10 < 20)  => Sai
+
+    (10 < 20) && !(20%10 == 0) => Sai
+
+
+- Bài toán kiểm tra năm nhuận:  (nam%400 == 0) ||  ((nam % 4 == 0) && (nam % 100 != 0)) 
 
 
 # Câu điều kiện trong C
